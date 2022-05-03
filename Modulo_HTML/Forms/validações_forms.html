@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validações Forms</title>
+</head>
+<body>
+    <div style="background-color: darkblue;">
+        <h2 style="color: white;">Lista de times da semifinal da champions league 2022</h2>
+        <input list="times">
+        <datalist id="times">
+            <option value="Liverpool">
+            <option value="Manchester City">
+            <option value="Real Madrid">
+            <option value="Villa Real">
+        </datalist>
+    <hr>
+    </div>
+    <div style="background-color: goldenrod;">
+        <form action="https://www.google.com/search">
+            <h2 style="color: white;">Campeão!!!</h2>
+            <label for="q">Digite o Campeão</label><br>
+            <input type="text" id="q" name="q" required autocomplete="off">
+            <input type="submit" value="Pesquisar time Campeão">
+        </form>
+    </div>
+    <br>
+    <div>
+        <p>Botão usando elemento input</p>
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+        <br>
+        <p>Botão usando elemento button</p>
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    </div>
+    <div>
+        <form>
+            <label for="gols">Gols que o Real Madri irá marcar:</label>
+            <input type="range" id="gols" name="gols" min="0" max="5">
+          </form>
+    </div>
+</body>
+</html>

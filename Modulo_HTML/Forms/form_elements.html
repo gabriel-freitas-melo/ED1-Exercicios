@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Label</h3>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required autocomplete="off">
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Select</h3>
+        <p>drop-down list onde você pode apenas selecionar</p>
+        <form>
+            <label for="carros">Escolha uma marca de carro</label><br>
+            <select name="carros" id="carros">
+                <option value="volvo">Volvo</option>
+                <option value="fiat">Fiat</option>
+                <option value="bmw" selected>BMW</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Textarea</h3>
+        <p>A multi-line input field (a text area)</p>
+        <form>
+            <textarea name="bio" id="" cols="30" rows="10">Fale sobre você</textarea>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Button</h3>
+        <p>A clickable button</p>
+        <p><strong>Lembre-se: button é diferente do input type button</strong></p>
+        <form>
+            <button type ="button" onclick="alert('Clique novamente')" >Clique aqui</button>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Fieldset e Legend</h3>
+        <p>O fieldset é o espaço e o legend o título do espaço</p>
+        <form>
+            <fieldset>
+              <legend>Seus dados:</legend>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Datalist</h3>
+        <p>A drop-down list mas com o input relacionado, ou seja, você pode escrever nela</p>
+        <form>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </form>
+        <hr>
+    </div>
+    <div>
+        <h3>Output</h3>
+        <p>the result of a calculation</p>
+        <p>Os id's são importantes para serem usados no código JS</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br>
+            <input type="submit">
+        </form>
+        <hr>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.column is-half{
+    color: blue;
+}
+.colum is-6{
+    color: red;
+}
+.column is-12-descktop is-1-mobile{
+    color: green;
+}
+.colum is-offset-4{
+    color: yellow;
+}
